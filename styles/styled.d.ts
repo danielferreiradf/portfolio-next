@@ -9,6 +9,9 @@ declare module "styled-components" {
       color4: string;
       color5: string;
     };
+    sizes: {
+      containerWidth: string;
+    };
     media: object;
   }
 }

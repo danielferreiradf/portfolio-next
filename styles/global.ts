@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-/* @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
     * {
         margin: 0;
         padding: 0;
@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
     }
     body, input, button {
-        font-family: Poppins, sans-serif;
+        font-family: Questrial, sans-serif;
     }
     
     button {

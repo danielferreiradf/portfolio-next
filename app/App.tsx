@@ -8,19 +8,24 @@ import Menu from "../components/menu/menu";
 import Header from "../components/header/header";
 
 import { MenuProvider } from "../context/menuContext";
+import { AppWrapper } from "./app.styles";
 
 const App: React.FC = () => {
   return (
-    <>
+    <AppWrapper>
       <MenuProvider>
-        <Header />
-        <Menu />
+        <nav>
+          <Menu />
+        </nav>
+        <section>
+          <Header />
+          <Showcase />
+          <About />
+          <Projects />
+          <Contact />
+        </section>
       </MenuProvider>
-      <Showcase />
-      <About />
-      <Projects />
-      <Contact />
-    </>
+    </AppWrapper>
   );
 };
 

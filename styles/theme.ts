@@ -8,5 +8,8 @@ export const theme: DefaultTheme = {
     color4: "#46684c",
     color5: "#dad7cd",
   },
+  sizes: {
+    containerWidth: "1040",
+  },
   media: {},
 };
