@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import Showcase from "../components/showcase/showcase";
 import About from "../components/about/about";
@@ -7,11 +7,15 @@ import Contact from "../components/contact/contact";
 import Menu from "../components/menu/menu";
 import Header from "../components/header/header";
 
+import { MenuProvider } from "../context/menuContext";
+
 const App: React.FC = () => {
   return (
     <>
-      <Header />
-      <Menu />
+      <MenuProvider>
+        <Header />
+        <Menu />
+      </MenuProvider>
       <Showcase />
       <About />
       <Projects />
