@@ -7,16 +7,13 @@ const Menu: React.FC = () => {
   const [menuIsOpen, setMenuIsOpen] = useContext(MenuContext);
 
   return (
-    <div
-      style={{
-        width: menuIsOpen ? "15rem" : "0rem",
-        transition: "all 0.5s",
-        background: "red",
-        height: "100%",
-      }}
-    >
-      <h1>MENU</h1>
-    </div>
+    <MenuContainer menuIsOpen={menuIsOpen}>
+      <span onClick={() => setMenuIsOpen(!menuIsOpen)}>X</span>
+      <p>Home</p>
+      <p>Sobre</p>
+      <p>Projetos</p>
+      <p>Contato</p>
+    </MenuContainer>
   );
 };
 

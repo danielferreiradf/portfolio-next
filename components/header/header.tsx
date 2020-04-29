@@ -10,7 +10,11 @@ const Header: React.FC = () => {
     <HeaderContainer>
       <nav>
         <ul>
-          <li onClick={() => setMenuIsOpen(!menuIsOpen)}>Menu</li>
+          {!menuIsOpen ? (
+            <li onClick={() => setMenuIsOpen(!menuIsOpen)}>Menu</li>
+          ) : (
+            <li></li>
+          )}
           <li>Curriculo</li>
         </ul>
       </nav>

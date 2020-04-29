@@ -4,7 +4,7 @@ export const HeaderContainer = styled.div`
   background: ${(props) => props.theme.colors.color2};
 
   nav {
-    width: ${(props) => props.theme.sizes.containerWidth}px;
+    max-width: ${(props) => props.theme.sizes.containerWidth}px;
     margin: 0 auto;
 
     ul {
