@@ -1,22 +1,22 @@
 import React from "react";
-import { ThemeProvider } from "styled-components";
-import GlobalStyle from "../styles/global";
-import theme from "../styles/theme";
 
 import Showcase from "../components/showcase/showcase";
 import About from "../components/about/about";
 import Projects from "../components/projects/projects";
 import Contact from "../components/contact/contact";
+import Menu from "../components/menu/menu";
+import Header from "../components/header/header";
 
 const App: React.FC = () => {
   return (
-    <ThemeProvider theme={theme}>
-      {/* <GlobalStyle /> */}
+    <>
+      <Header />
+      <Menu />
       <Showcase />
       <About />
       <Projects />
       <Contact />
-    </ThemeProvider>
+    </>
   );
 };
 
