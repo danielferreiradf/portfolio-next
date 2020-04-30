@@ -6,6 +6,7 @@ export const HeaderContainer = styled.div`
   nav {
     max-width: ${(props) => props.theme.sizes.containerWidth}px;
     margin: 0 auto;
+    padding: 0 1rem;
 
     ul {
       list-style: none;
@@ -23,7 +24,7 @@ export const HeaderContainer = styled.div`
 
       li:last-child {
         background: ${(props) => props.theme.colors.color3};
-        padding: 1.4rem;
+        /* padding: 1.4rem; */
       }
     }
   }

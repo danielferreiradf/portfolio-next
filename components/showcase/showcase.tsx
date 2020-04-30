@@ -1,12 +1,21 @@
 import React from "react";
-import styled from "styled-components";
-
-const Title = styled.h1`
-  color: ${(props) => props.theme.colors.color1};
-`;
+import { ShowcaseContainer } from "./showcase.styles";
 
 const Showcase: React.FC = () => {
-  return <Title>Showcase</Title>;
+  return (
+    <ShowcaseContainer>
+      <section>
+        <div>
+          <h1>Daniel Ferreira</h1>
+          <h2>Front End Developer</h2>
+          <a href="#contato">Sobre mim</a>
+        </div>
+        <div>
+          <img src="/assets/images/profile.jpg" alt="Imagem de Perfil" />
+        </div>
+      </section>
+    </ShowcaseContainer>
+  );
 };
 
 export default Showcase;
