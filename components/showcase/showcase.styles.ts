@@ -18,12 +18,14 @@ export const ShowcaseContainer = styled.div`
         font-weight: lighter;
         color: ${(props) => props.theme.colors.color5};
         margin-bottom: -1rem;
+        font-weight: normal;
       }
 
       h2 {
         font-size: 3.5rem;
         font-weight: lighter;
         color: ${(props) => props.theme.colors.color3};
+        font-weight: normal;
         margin-bottom: 3rem;
         transition: transform 0.6s;
 
@@ -45,9 +47,34 @@ export const ShowcaseContainer = styled.div`
           background: ${(props) => props.theme.colors.color3};
         }
       }
+
+      div {
+        display: flex;
+        margin-top: 3.5rem;
+
+        a {
+          all: unset;
+          cursor: pointer;
+          margin-right: 4rem;
+
+          &:hover {
+            background: none;
+          }
+
+          img {
+            height: 3.5rem;
+            width: 3.5rem;
+            transition: all 0.3s;
+
+            &:hover {
+              filter: brightness(50%);
+            }
+          }
+        }
+      }
     }
 
-    div:last-child {
+    div:nth-child(2) {
       margin-left: 3.5rem;
       position: relative;
       transition: all 0.3s;

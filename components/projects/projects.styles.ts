@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
-export const AboutContainer = styled.div`
+export const ProjectsContainer = styled.div`
   section {
-    height: 70rem;
     max-width: ${(props) => props.theme.sizes.containerWidth}px;
     margin: 0 auto;
     padding: 0 1rem;
@@ -29,26 +28,11 @@ export const AboutContainer = styled.div`
         left: 0;
       }
     }
-    p {
-      color: ${(props) => props.theme.colors.color5};
-      font-size: 1.5rem;
-      margin-bottom: 2.2rem;
-    }
-    h3 {
-      color: ${(props) => props.theme.colors.color5};
-      font-size: 2.3rem;
-      margin-bottom: 2rem;
-    }
-    ul {
-      list-style: none;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
 
-      li {
-        color: ${(props) => props.theme.colors.color5};
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-      }
+    section {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 3rem;
     }
   }
 `;

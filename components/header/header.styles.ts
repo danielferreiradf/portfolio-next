@@ -16,7 +16,7 @@ export const HeaderContainer = styled.div`
       height: 5rem;
 
       li {
-        font-size: 2rem;
+        font-size: 1.8rem;
         color: ${(props) => props.theme.colors.color5};
         text-transform: uppercase;
         cursor: pointer;
@@ -24,7 +24,7 @@ export const HeaderContainer = styled.div`
 
       li:last-child {
         background: ${(props) => props.theme.colors.color3};
-        /* padding: 1.4rem; */
+        padding: 1.1rem;
       }
     }
   }
