@@ -15,7 +15,7 @@ export const ProjectsContainer = styled.div`
     h2 {
       color: ${(props) => props.theme.colors.color4};
       font-size: 2.5rem;
-      margin-bottom: 5rem;
+      margin-bottom: 7rem;
       position: relative;
 
       &:after {

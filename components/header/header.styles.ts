@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
   background: ${(props) => props.theme.colors.color2};
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.9;
 
   nav {
     max-width: ${(props) => props.theme.sizes.containerWidth}px;

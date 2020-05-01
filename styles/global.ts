@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
         background: ${(props) => props.theme.colors.color1};
         -webkit-font-smoothing: antialiased;
     }
-    body, input, button {
+    body, input, button, textarea {
         font-family: Poppins, sans-serif;
     }
     
