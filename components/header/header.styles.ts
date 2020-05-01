@@ -5,7 +5,8 @@ export const HeaderContainer = styled.div`
   position: fixed;
   width: 100%;
   z-index: 1;
-  opacity: 0.9;
+  opacity: 0.95;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
   nav {
     max-width: ${(props) => props.theme.sizes.containerWidth}px;

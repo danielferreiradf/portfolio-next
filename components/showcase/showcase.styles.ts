@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const ShowcaseContainer = styled.div`
+  margin-top: 5rem;
+
   section {
     height: 70rem;
     max-width: ${(props) => props.theme.sizes.containerWidth}px;

@@ -2,16 +2,16 @@ import { DefaultTheme } from "styled-components";
 
 export const theme: DefaultTheme = {
   colors: {
-    color1: "#1d1c24",
-    color2: "#2a2931",
-    color3: "#344e41",
-    color4: "#46684c",
-    color5: "#dad7cd",
-    // color1: "#252422",
-    // color2: "#403d39",
-    // color3: "#eb5e28",
-    // color4: "#eb5e01",
-    // color5: "#fffcf2",
+    // color1: "#1d1c24",
+    // color2: "#2a2931",
+    // color3: "#344e41",
+    // color4: "#46684c",
+    // color5: "#dad7cd",
+    color1: "#030B16",
+    color2: "#060F21",
+    color3: "#fca311",
+    color4: "#C1292E",
+    color5: "#FFFFFF",
   },
   sizes: {
     containerWidth: "1040",
