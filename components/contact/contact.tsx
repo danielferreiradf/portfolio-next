@@ -51,7 +51,7 @@ const Contact: React.FC = () => {
                 Nome <span>*</span>
               </label>
               <input
-                // required
+                required
                 type="text"
                 name="name"
                 value={name}
@@ -63,7 +63,7 @@ const Contact: React.FC = () => {
                 Email <span>*</span>
               </label>
               <input
-                // required
+                required
                 type="email"
                 name="email"
                 value={email}
@@ -75,7 +75,7 @@ const Contact: React.FC = () => {
                 Mensagem <span>*</span>
               </label>
               <textarea
-                // required
+                required
                 name="message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}

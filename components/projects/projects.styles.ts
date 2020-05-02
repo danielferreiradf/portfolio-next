@@ -35,9 +35,19 @@ export const ProjectsContainer = styled.div`
     }
 
     section {
+      width: 100%;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-gap: 3rem;
+      grid-gap: 2rem;
+      padding: 0;
+
+      @media (max-width: ${(props) => props.theme.breakPoints.tablet}) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (max-width: ${(props) => props.theme.breakPoints.mobile}) {
+        grid-template-columns: repeat(1, 1fr);
+      }
     }
   }
 `;

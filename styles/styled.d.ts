@@ -12,6 +12,9 @@ declare module "styled-components" {
     sizes: {
       containerWidth: string;
     };
-    media: object;
+    breakPoints: {
+      tablet: string;
+      mobile: string;
+    };
   }
 }

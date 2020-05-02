@@ -21,5 +21,8 @@ export const theme: DefaultTheme = {
   sizes: {
     containerWidth: "1040",
   },
-  media: {},
+  breakPoints: {
+    tablet: "768px",
+    mobile: "480px",
+  },
 };
