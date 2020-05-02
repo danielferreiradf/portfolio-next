@@ -12,6 +12,7 @@ const Contact: React.FC = () => {
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [messageSent, setMessageSent] = useState<boolean>(false);
+  const [messageError, setMessageError] = useState<boolean>(false);
 
   const handleSubmit = (e) => {
     // fetch("/", {
@@ -24,9 +25,12 @@ const Contact: React.FC = () => {
 
     e.preventDefault();
 
-    if (name && email && message) {
+    if (!name && !email && !message) {
+      setMessageError(true);
+    } else {
       console.log(name, email, message);
 
+      alert("Mensagem enviada!");
       setMessageSent(true);
       setName("");
       setEmail("");
@@ -43,9 +47,11 @@ const Contact: React.FC = () => {
         <section>
           <form onSubmit={handleSubmit}>
             <p>
-              <label>Nome</label>
+              <label>
+                Nome <span>*</span>
+              </label>
               <input
-                required
+                // required
                 type="text"
                 name="name"
                 value={name}
@@ -53,9 +59,11 @@ const Contact: React.FC = () => {
               />
             </p>
             <p>
-              <label>Email</label>
+              <label>
+                Email <span>*</span>
+              </label>
               <input
-                required
+                // required
                 type="email"
                 name="email"
                 value={email}
@@ -63,21 +71,24 @@ const Contact: React.FC = () => {
               />
             </p>
             <p>
-              <label>Mensagem</label>
+              <label>
+                Mensagem <span>*</span>
+              </label>
               <textarea
-                required
+                // required
                 name="message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               />
             </p>
-            <p>
-              {messageSent ? (
-                <p>Mensagem enviada, Obrigado!</p>
-              ) : (
-                <button type="submit">Enviar</button>
-              )}
-            </p>
+            {messageError ? (
+              <p>Nome, email e mensagem são obrigatórios!</p>
+            ) : null}
+            {messageSent ? (
+              <p>Mensagem enviada, Obrigado!</p>
+            ) : (
+              <button type="submit">Enviar</button>
+            )}
           </form>
         </section>
         <footer>

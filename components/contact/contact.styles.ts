@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.div`
-  margin-top: 20rem;
-
   section {
     max-width: ${(props) => props.theme.sizes.containerWidth}px;
     margin: 0 auto;
@@ -12,6 +10,7 @@ export const ContactContainer = styled.div`
       color: ${(props) => props.theme.colors.color5};
       font-size: 3.5rem;
       margin-bottom: 1rem;
+      padding-top: 6rem;
     }
 
     h2 {
@@ -48,6 +47,10 @@ export const ContactContainer = styled.div`
           font-size: 1.6rem;
           margin-bottom: 0.5rem;
           text-align: left;
+
+          span {
+            color: ${(props) => props.theme.colors.color3};
+          }
         }
 
         input,
@@ -88,6 +91,7 @@ export const ContactContainer = styled.div`
           color: ${(props) => props.theme.colors.color5};
           display: block;
           text-align: right;
+          margin-bottom: 1rem;
         }
       }
     }

@@ -41,6 +41,7 @@ export const MenuContainer = styled.div<IMenuContainer>`
 
         &:hover {
           background: ${(props) => props.theme.colors.color3};
+          color: ${(props) => props.theme.colors.color2};
         }
       }
     }

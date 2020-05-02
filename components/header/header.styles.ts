@@ -28,8 +28,15 @@ export const HeaderContainer = styled.div`
       }
 
       li:last-child {
+        color: ${(props) => props.theme.colors.color1};
         background: ${(props) => props.theme.colors.color3};
-        padding: 1.1rem;
+        padding: 0.4rem 0.8rem;
+        /* padding: 1.1rem; */
+
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
       }
     }
   }

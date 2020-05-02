@@ -2,15 +2,17 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
   section {
-    height: 70rem;
+    /* height: 70rem; */
     max-width: ${(props) => props.theme.sizes.containerWidth}px;
     margin: 0 auto;
     padding: 0 1rem;
+    margin-bottom: 3rem;
 
     h1 {
       color: ${(props) => props.theme.colors.color5};
       font-size: 3.5rem;
       margin-bottom: 1rem;
+      padding-top: 6rem;
     }
 
     h2 {

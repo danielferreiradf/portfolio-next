@@ -1,7 +1,9 @@
 import React from "react";
 
+import { projects } from "../../data/projects";
 import { ProjectsContainer } from "./projects.styles";
 import ProjectsCard from "../projectsCard/projectsCard";
+
 const Projects: React.FC = () => {
   return (
     <ProjectsContainer>
@@ -10,12 +12,9 @@ const Projects: React.FC = () => {
         <h2>Alguns projetos desenvolvidos</h2>
 
         <section>
-          <ProjectsCard />
-          <ProjectsCard />
-          <ProjectsCard />
-          <ProjectsCard />
-          <ProjectsCard />
-          <ProjectsCard />
+          {projects.map((project) => (
+            <ProjectsCard key={project.id} project={project} />
+          ))}
         </section>
       </section>
     </ProjectsContainer>

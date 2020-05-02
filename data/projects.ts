@@ -14,8 +14,8 @@ export const projects: project[] = [
     description:
       "Jogo RPG de navegador. Desenvolvido utilizando ReactJS - Redux - Node.js - MongoDB",
     imgName: "mavisgate",
-    githubLink: "https://github.com/danielferreiradf/mavisgate",
-    liveLink: "https://mavisgate.herokuapp.com",
+    githubLink: "//github.com/danielferreiradf/mavisgate",
+    liveLink: "//mavisgate.herokuapp.com",
   },
   {
     id: 2,
@@ -23,8 +23,8 @@ export const projects: project[] = [
     imgName: "monstermovies",
     description:
       "Aplicação que lista filmes e séries de TV em destaque. Desenvolvido utilizando ReactJS - Redux e Movies database public API",
-    githubLink: "https://github.com/danielferreiradf/monstermovies",
-    liveLink: "https://monstermovies.herokuapp.com/",
+    githubLink: "//github.com/danielferreiradf/monstermovies",
+    liveLink: "//monstermovies.herokuapp.com/",
   },
   {
     id: 3,
@@ -32,24 +32,24 @@ export const projects: project[] = [
     imgName: "barberapp",
     description:
       "Aplicação de serviço para uma barbearia. Desenvolvido utilizando ReactJS - Redux - Node.js - PostgreSQL",
-    githubLink: "https://github.com/danielferreiradf/baber_app_web",
+    githubLink: "//github.com/danielferreiradf/baber_app_web",
   },
   {
     id: 4,
     name: "Marvel Search Heroes",
-    imgName: "mavisgate",
+    imgName: "marvelsearchheroes",
     description:
       "Aplicação que lista personagens de quadrinhos Marvel. Desenvolvido utilizando React e Marvel Comics public API",
-    githubLink: "https://github.com/danielferreiradf/marvelsearchheroes",
-    liveLink: "https://marvelsearchheroes.netlify.com",
+    githubLink: "//github.com/danielferreiradf/marvelsearchheroes",
+    liveLink: "//marvelsearchheroes.netlify.com",
   },
   {
     id: 5,
     name: "Fox Shoes",
     imgName: "foxshoes",
     description:
-      "Loja de tênis, que simula um E-commerce. Desenvolvido utilizando React - Redux",
-    githubLink: "https://github.com/danielferreiradf/fox-shoes",
+      "Loja virtual de tênis, aplicação de um E-commerce. Desenvolvido utilizando React - Redux",
+    githubLink: "//github.com/danielferreiradf/fox-shoes",
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ export const projects: project[] = [
     imgName: "moneyconverter",
     description:
       "Conversor de moedas mundiais. Desenvolvido utilizando ReactJS e oreign exchange rates API",
-    githubLink: "https://github.com/danielferreiradf/moneyconverter",
-    liveLink: "https://danielferreiradf.github.io/moneyconverter",
+    githubLink: "//github.com/danielferreiradf/moneyconverter",
+    liveLink: "//danielferreiradf.github.io/moneyconverter",
   },
 ];

@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 
 import { MenuContext } from "../../context/menuContext";
 import { HeaderContainer } from "./header.styles";
+import Link from "next/link";
 
 const Header: React.FC = () => {
   const [menuIsOpen, setMenuIsOpen] = useContext(MenuContext);
@@ -15,7 +16,11 @@ const Header: React.FC = () => {
           ) : (
             <li></li>
           )}
-          <li>Curriculo</li>
+          <li>
+            <Link href="https://www.google.com" passHref={true}>
+              <a target="_blank">Currículo</a>
+            </Link>
+          </li>
         </ul>
       </nav>
     </HeaderContainer>

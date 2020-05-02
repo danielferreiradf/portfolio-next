@@ -12,23 +12,23 @@ const Menu: React.FC = () => {
       <span onClick={() => setMenuIsOpen(!menuIsOpen)}>x</span>
       <ul>
         <li>
-          <Link href="#home">
-            <a>Home</a>
+          <Link href="/">
+            <a onClick={() => setMenuIsOpen(!menuIsOpen)}>Home</a>
           </Link>
         </li>
         <li>
           <Link href="#sobre">
-            <a>Sobre</a>
+            <a onClick={() => setMenuIsOpen(!menuIsOpen)}>Sobre</a>
           </Link>
         </li>
         <li>
           <Link href="#projetos">
-            <a>Projetos</a>
+            <a onClick={() => setMenuIsOpen(!menuIsOpen)}>Projetos</a>
           </Link>
         </li>
         <li>
           <Link href="#contato">
-            <a>Contato</a>
+            <a onClick={() => setMenuIsOpen(!menuIsOpen)}>Contato</a>
           </Link>
         </li>
       </ul>
