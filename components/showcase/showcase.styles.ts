@@ -58,6 +58,7 @@ export const ShowcaseContainer = styled.div`
           all: unset;
           cursor: pointer;
           margin-right: 4rem;
+          background: none;
 
           &:hover {
             background: none;
