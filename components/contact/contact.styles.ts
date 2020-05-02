@@ -40,6 +40,7 @@ export const ContactContainer = styled.div`
         padding: 2rem;
         width: 50%;
         margin-bottom: 10rem;
+        border: 1px solid rgba(255, 255, 255, 0.05);
 
         label {
           display: block;
@@ -51,8 +52,8 @@ export const ContactContainer = styled.div`
 
         input,
         textarea {
-          border: none;
-          background: ${(props) => props.theme.colors.color3};
+          border: 1px solid rgba(255, 255, 255, 0.03);
+          background: ${(props) => props.theme.colors.color4};
           color: ${(props) => props.theme.colors.color5};
           font-size: 1.4rem;
           margin-bottom: 1rem;
@@ -77,7 +78,7 @@ export const ContactContainer = styled.div`
           margin-left: auto;
 
           &:hover {
-            color: ${(props) => props.theme.colors.color5};
+            color: ${(props) => props.theme.colors.color1};
             background: ${(props) => props.theme.colors.color3};
           }
         }

@@ -14,7 +14,7 @@ export const theme: DefaultTheme = {
     // color5: "#FFFFFF",
     color1: "#121318",
     color2: "#181818",
-    color3: "#5DBA98",
+    color3: "#73EFBD",
     color4: "#202D2C",
     color5: "#FEFEFE",
   },
