@@ -15,8 +15,11 @@ export const ContactContainer = styled.div`
     }
 
     h2 {
-      color: ${(props) => props.theme.colors.color3};
-      font-size: 2.5rem;
+      color: ${(props) => props.theme.colors.color5};
+      background: ${(props) => props.theme.colors.color4};
+      display: inline-block;
+      padding: 0.5rem;
+      font-size: 2rem;
       margin-bottom: 7rem;
       position: relative;
 
@@ -25,7 +28,7 @@ export const ContactContainer = styled.div`
         position: absolute;
         height: 0.5rem;
         width: 12rem;
-        background: ${(props) => props.theme.colors.color4};
+        background: ${(props) => props.theme.colors.color3};
         bottom: -1.5rem;
         left: 0;
       }

@@ -6,7 +6,7 @@ import { ShowcaseContainer } from "./showcase.styles";
 const Showcase: React.FC = () => {
   return (
     <ShowcaseContainer>
-      <section>
+      <section id="home">
         <div>
           <h1>Daniel Ferreira</h1>
           <h2>Front End Developer</h2>
