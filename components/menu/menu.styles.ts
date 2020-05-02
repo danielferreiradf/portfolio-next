@@ -11,9 +11,12 @@ export const MenuContainer = styled.div<IMenuContainer>`
   height: 100vh;
   overflow: hidden;
   position: sticky;
-  /* z-index: 2; */
   top: 0;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
+
+  @media (max-width: ${(props) => props.theme.breakPoints.mobile}) {
+    width: ${(props) => (props.menuIsOpen ? "18rem" : "0")};
+  }
 
   span {
     color: ${(props) => props.theme.colors.color5};

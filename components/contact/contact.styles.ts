@@ -34,12 +34,18 @@ export const ContactContainer = styled.div`
     }
 
     section {
+      padding: 0;
+
       form {
         background: ${(props) => props.theme.colors.color2};
         padding: 2rem;
         width: 50%;
         margin-bottom: 10rem;
         border: 1px solid rgba(255, 255, 255, 0.05);
+
+        @media (max-width: ${(props) => props.theme.breakPoints.tablet}) {
+          width: 100%;
+        }
 
         label {
           display: block;

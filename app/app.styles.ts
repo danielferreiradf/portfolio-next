@@ -4,6 +4,6 @@ export const AppWrapper = styled.div`
   display: flex;
 
   section {
-    width: 100vw;
+    width: calc(100% - 1px);
   }
 `;

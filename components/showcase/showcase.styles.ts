@@ -1,16 +1,24 @@
 import styled from "styled-components";
 
 export const ShowcaseContainer = styled.div`
-  margin-top: 5rem;
+  margin: 20rem 0;
+
+  @media (max-width: ${(props) => props.theme.breakPoints.mobile}) {
+    margin: 13rem 0 8rem 0;
+  }
 
   section {
-    height: 70rem;
+    /* height: 70rem; */
     max-width: ${(props) => props.theme.sizes.containerWidth}px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
+
+    @media (max-width: ${(props) => props.theme.breakPoints.tablet}) {
+      flex-direction: column;
+    }
 
     div {
       margin-right: 3.5rem;
@@ -21,6 +29,11 @@ export const ShowcaseContainer = styled.div`
         color: ${(props) => props.theme.colors.color5};
         margin-bottom: -1rem;
         font-weight: normal;
+
+        @media (max-width: ${(props) => props.theme.breakPoints.mobile}) {
+          font-weight: bolder;
+          font-size: 4rem;
+        }
       }
 
       h2 {
@@ -33,6 +46,10 @@ export const ShowcaseContainer = styled.div`
 
         &:hover {
           transform: translateX(1rem);
+        }
+
+        @media (max-width: ${(props) => props.theme.breakPoints.mobile}) {
+          font-size: 2.1rem;
         }
       }
 
@@ -72,6 +89,11 @@ export const ShowcaseContainer = styled.div`
             &:hover {
               filter: brightness(50%);
             }
+
+            @media (max-width: ${(props) => props.theme.breakPoints.tablet}) {
+              height: 2.5rem;
+              width: 2.5rem;
+            }
           }
         }
       }
@@ -82,12 +104,25 @@ export const ShowcaseContainer = styled.div`
       position: relative;
       transition: all 0.3s;
 
+      @media (max-width: ${(props) => props.theme.breakPoints.tablet}) {
+        margin-top: 7rem;
+      }
+
       img {
         width: 27rem;
         transition: all 0.3s;
 
         &:hover {
           transform: translateY(-1rem);
+        }
+
+        @media (max-width: ${(props) => props.theme.breakPoints.tablet}) {
+          margin-top: 2rem;
+        }
+
+        @media (max-width: ${(props) => props.theme.breakPoints.mobile}) {
+          height: 17rem;
+          width: 17rem;
         }
       }
 
@@ -102,6 +137,15 @@ export const ShowcaseContainer = styled.div`
         left: 1.5rem;
         transition: all 0.7s;
         z-index: -1;
+
+        @media (max-width: ${(props) => props.theme.breakPoints.tablet}) {
+          margin-top: 2rem;
+        }
+
+        @media (max-width: ${(props) => props.theme.breakPoints.mobile}) {
+          height: 17rem;
+          width: 17rem;
+        }
       }
 
       &:hover {
