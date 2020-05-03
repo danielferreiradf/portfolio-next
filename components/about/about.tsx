@@ -8,15 +8,15 @@ const About: React.FC = () => {
         <h1>Sobre mim</h1>
         <h2>Informações sobre o desenvolvedor</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eaque
-          architecto voluptates neque saepe velit eveniet sit asperiores atque
-          repudiandae.
+          Sou Daniel, um desenvolvedor Web entusiasta por tecnologia, em como as
+          tecnologias funcionam e como o mundo evolui.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque magnam
-          facilis vero tempora hic fuga, fugit voluptatem sunt natus distinctio
-          sequi dolorum aliquam praesentium eius libero illum! Magni, sint
-          dignissimos?
+          Sempre fui bastante fascinado por computadores, e é por isso que
+          decidi trabalhar na área de desenvolvimento. Através disso, em
+          programação pude encontrar algo que eu possa criar soluções inovadoras
+          para problemas e manter minha mente ativa e sempre disposta a buscar
+          novos conhecimentos.{" "}
         </p>
         <h3>Skills</h3>
         <ul>

@@ -38,6 +38,7 @@ export const AboutContainer = styled.div`
       color: ${(props) => props.theme.colors.color5};
       font-size: 1.5rem;
       margin-bottom: 2.2rem;
+      text-indent: 2rem;
     }
     h3 {
       color: ${(props) => props.theme.colors.color5};
