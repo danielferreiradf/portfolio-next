@@ -50,6 +50,11 @@ export const AboutContainer = styled.div`
       display: grid;
       grid-template-columns: repeat(2, 1fr);
 
+      @media (max-width: ${(props) => props.theme.breakPoints.mobile}) {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 1rem;
+      }
+
       li {
         color: ${(props) => props.theme.colors.color5};
         font-size: 1.5rem;
