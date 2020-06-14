@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import { ContactContainer } from "./contact.styles";
-
-const encode = (data) => {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-};
+import emailjs from "emailjs-com";
 
 const Contact: React.FC = () => {
   const [name, setName] = useState<string>("");
@@ -14,28 +9,31 @@ const Contact: React.FC = () => {
   const [messageSent, setMessageSent] = useState<boolean>(false);
   const [messageError, setMessageError] = useState<boolean>(false);
 
-  const handleSubmit = (e) => {
-    // fetch("/", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    //   body: encode({ "form-name": "contact", name, message, email }),
-    // })
-    //   .then(() => alert("Success!"))
-    //   .catch((error) => alert(error));
-
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!name && !email && !message) {
       setMessageError(true);
     } else {
-      console.log(name, email, message);
+      const emailBody = {
+        name,
+        email,
+        message,
+      };
 
-      alert("Mensagem enviada!");
-      setMessageSent(true);
-      setName("");
-      setEmail("");
-      setMessage("");
+      await emailjs.send(
+        "default_service",
+        process.env.email_template,
+        emailBody,
+        process.env.email_user_key
+      );
     }
+
+    alert("Mensagem enviada!");
+    setMessageSent(true);
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
   return (

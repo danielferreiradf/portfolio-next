@@ -17,7 +17,7 @@ const Header: React.FC = () => {
             <li></li>
           )}
           <li>
-            <Link href="https://www.google.com" passHref={true}>
+            <Link href="www.google.com" passHref={true}>
               <a target="_blank">Currículo</a>
             </Link>
           </li>
